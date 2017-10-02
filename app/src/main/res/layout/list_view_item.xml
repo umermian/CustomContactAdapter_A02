@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="@android:color/holo_green_light"
+
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textName"
+        android:layout_below="@+id/textName"
+        android:layout_marginTop="27dp"
+        android:text="Phone"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textPhone"
+        android:layout_below="@+id/textPhone"
+        android:layout_marginTop="29dp"
+        android:text="Gender"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textName"
+        android:layout_alignBottom="@+id/textName"
+        android:layout_marginStart="49dp"
+        android:layout_toEndOf="@+id/textGender"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textPhone"
+        android:layout_alignBottom="@+id/textPhone"
+        android:layout_alignStart="@+id/name"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/phone"
+        android:layout_alignTop="@+id/textGender"
+        android:text="TextView"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/name"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/icon"
+        android:textColor="@android:color/holo_green_light" />
+
+</RelativeLayout>
